@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./landingPage.module.css";
 import {
@@ -26,15 +26,23 @@ type PhantomWindow = {
 } & Window;
 declare const window: PhantomWindow;
 
-export default function WalletMdal() {
+interface WalletMdalProps {
+  setWalletAddress: (address: string | null) => void;
+  walletAddress: string | null;
+}
+
+export default function WalletMdal({
+  setWalletAddress,
+  walletAddress,
+}: WalletMdalProps) {
   const [connection, setConnection] = useState<Connection | null>(null);
 
   const connectWallet = async () => {
     if (window.solana) {
       try {
-        console.log("test");
         const { publicKey } = await window.solana.connect();
         console.log("Wallet connected with address:", publicKey.toString());
+        setWalletAddress(publicKey.toString());
         const conn = new Connection(clusterApiUrl("devnet"));
         setConnection(conn);
       } catch (err) {
