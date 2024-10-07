@@ -6,8 +6,6 @@ use solana_program::{
     pubkey::Pubkey,
     program_error::ProgramError,
     sysvar::{clock::Clock, Sysvar},
-    program::{invoke, invoke_signed},
-    program_pack::Pack,
 };
 
 const ACTION_PLANT_PICTURE: u8 = 0;
