@@ -1,6 +1,6 @@
 # GreenThumb: Token Rewards for Urban Gardening
 
-**GreenThumb** is an innovative decentralized platform built on the Solana blockchain to promote urban gardening and sustainability. The platform incentivizes users with GreenThumb tokens for engaging in eco-friendly gardening activities like planting, watering, harvesting, and sharing gardening tips. Currently under active development, GreenThumb aims to create a sustainable ecosystem that rewards users while fostering a greener future.
+**GreenThumb** is an innovative decentralized platform built on the  blockchain to promote urban gardening and sustainability. The platform incentivizes users with GreenThumb tokens for engaging in eco-friendly gardening activities like planting, watering, harvesting, and sharing gardening tips. Currently under active development, GreenThumb aims to create a sustainable ecosystem that rewards users while fostering a greener future.
 
 ## Features
 
@@ -36,7 +36,7 @@ Premium users enjoy additional benefits:
 
 ## Tech Stack
 
-- **Blockchain**: Solana
+- **Blockchain**: '''''
 - **Smart Contracts**: Rust
 - **Frontend**: HTML5, CSS4, JavaScript, TypeScript
 - **Backend**: Rust
